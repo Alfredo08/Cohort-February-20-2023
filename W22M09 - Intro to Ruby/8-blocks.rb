@@ -4,10 +4,12 @@
         callback();
         console.log("See you around!");
     }
-    function hello(){
-        console.log("Hello there");
+
+    function printHello(){
+        console.log("Hey there!");
     }
-    greeting("Alex", hello);
+
+    greeting("Alex", printHello);
 =end
 
 def greeting name
@@ -16,12 +18,10 @@ def greeting name
     puts "See you around!"
 end
 
-def hello
-    puts "Hello there"
+def print_hello
+    puts "Hey there!"
 end
 
 greeting "Alex" do
-    hello
+    print_hello
 end
-
-

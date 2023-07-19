@@ -1,34 +1,36 @@
 
 class Dog
-    # Getters
-    # attr_reader :name, :breed
+    # Access methods / Getters
+    # attr_reader :name, :breed, :size
 
-    # Setters
-    # attr_writer :name, :breed
-
-    # Getters and Setters
-    attr_accessor :name, :breed
+    # Modifier methods / Setters
+    # attr_writer :name, :breed, :size
+    attr_accessor :name, :breed, :size
 
     # Constructor
-    def initialize name, breed
-        # Atrributes
+    def initialize name, breed, size
         @name = name
         @breed = breed
+        @size = size
     end
 
-    def display_info
-        puts "This dog name is #{@name} and it is a #{@breed}"
+    def print_info
+        puts "Name : #{@name}"
+        puts "Breed: #{@breed}"
+        puts "Size : #{@size}"
     end
 end
 
-max = Dog.new "Max", "Golden Retriever"
-chester = Dog.new "Chester", "Labrador"
+max = Dog.new "Max", "Labrador", "Medium"
+jagger = Dog.new "Jagger", "Golden Retriever", "Big"
 
-puts max.class
-puts max
-max.display_info
+puts max.name, max.size
 
-puts max.name
-max.name = "Jagger"
+max.print_info
 
-max.display_info
+max.size = "Small"
+puts "-------"
+
+max.print_info
+
+jagger.print_info

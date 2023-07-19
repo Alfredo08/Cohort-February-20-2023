@@ -1,32 +1,29 @@
+
 =begin
     Primitive
-    - Strings
     - Numbers
         * Integer
         * Float
-    - nil
+    - Strings
     - Boolean
-    - Symbols
+    - nil
 
     Composite
-    - Arrays
     - Hashes
+    - Arrays
     - Classes
 =end
 
 first_name = "Alex"
-last_name = "Miller"
+last_name = 'Miller'
 age = 25
 grade = 9.86
-flag = true
-graduated = nil
-my_symbol = ":this is my symbol:"
+graduated = true
+extra_certificate = nil
 
 puts first_name, first_name.class
+p last_name, last_name.class
 puts age, age.class
 puts grade, grade.class
-puts flag, flag.class
 puts graduated, graduated.class
-puts my_symbol, my_symbol.class
-
-p first_name, flag, graduated
+puts extra_certificate, extra_certificate.class
